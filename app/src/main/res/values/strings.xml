@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">MyApiTest - COLOQUE O SEU NOME AQUI</string>
+    <string name="app_name">FTPR Car - COLOQUE O SEU NOME AQUI</string>
+
+    <string name="generical_error">Erro desconhecido, clique para tentar novamente.</string>
+    <string name="no_items">Nenhum carro disponível.</string>
+    <string name="required_field">Campo obrigatório</string>
+
+    <string name="hint_cellphone">+55 11 912345678</string>
+    <string name="code_brazil">+55</string>
+    <string name="send_sms">Enviar SMS</string>
+    <string name="hint_verify_sms">123456</string>
+    <string name="verify_sms">Verificar SMS</string>
+    <string name="menu_loggout">Sair</string>
+    <string name="sms_sent">Código de verificação enviado via SMS</string>
+    <string name="code_not_sent_yet">Envie o SMS antes de verificar o código.</string>
+
+    <string name="car_label_year">Ano: %1$s</string>
+    <string name="car_label_licence">Placa: %1$s</string>
+
+    <string name="location_permission_denied">Permissão de localização negada.</string>
+    <string name="required_marker">Selecione um local no mapa.</string>
+    <string name="required_photo">Tire uma foto do carro.</string>
+    <string name="image_captured">Imagem obtida</string>
+    <string name="error_upload_image">Falha ao enviar imagem para o Firebase.</string>
+    <string name="error_add_car">Erro ao adicionar o carro.</string>
+    <string name="success_add_car">Carro adicionado com sucesso.</string>
+
+    <string name="google_maps_key">COLOQUE_SUA_CHAVE_DO_GOOGLE_MAPS_AQUI</string>
 </resources>
