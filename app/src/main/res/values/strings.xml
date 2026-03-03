@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FTPR Car - COLOQUE O SEU NOME AQUI</string>
+    <string name="app_name">MyApiTest - Raqueli Gonçalves</string>
 
     <string name="generical_error">Erro desconhecido, clique para tentar novamente.</string>
     <string name="no_items">Nenhum carro disponível.</string>
@@ -19,11 +19,11 @@
 
     <string name="location_permission_denied">Permissão de localização negada.</string>
     <string name="required_marker">Selecione um local no mapa.</string>
-    <string name="required_photo">Tire uma foto do carro.</string>
+    <string name="required_photo">Tire uma foto do carro ou informe a URL da imagem.</string>
     <string name="image_captured">Imagem obtida</string>
     <string name="error_upload_image">Falha ao enviar imagem para o Firebase.</string>
     <string name="error_add_car">Erro ao adicionar o carro.</string>
     <string name="success_add_car">Carro adicionado com sucesso.</string>
 
-    <string name="google_maps_key">COLOQUE_SUA_CHAVE_DO_GOOGLE_MAPS_AQUI</string>
+    <string name="google_maps_key">AIzaSyAQnRUL6FqzZRel99rS1Ph1a5YtBII9IWQ</string>
 </resources>

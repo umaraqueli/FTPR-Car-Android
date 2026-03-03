@@ -19,26 +19,16 @@
         app:titleTextColor="@android:color/black" />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/carId"
+        android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
-        android:hint="ID"
+        android:hint="Nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
-
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:hint="Nome"
-        app:layout_constraintEnd_toEndOf="@id/carId"
-        app:layout_constraintStart_toStartOf="@id/carId"
-        app:layout_constraintTop_toBottomOf="@id/carId" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/year"
@@ -65,8 +55,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:focusable="false"
         android:hint="URL da imagem"
+        android:inputType="textUri"
         app:layout_constraintEnd_toEndOf="@id/licence"
         app:layout_constraintStart_toStartOf="@id/licence"
         app:layout_constraintTop_toBottomOf="@id/licence" />

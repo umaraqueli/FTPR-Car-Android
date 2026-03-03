@@ -40,6 +40,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.ByteArrayOutputStream
 import java.io.File
+import java.security.SecureRandom
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -212,17 +213,18 @@ class NewCarActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private fun saveCar() {
         if (!validateForm()) return
-        uploadImageToFirebase()
+
+        val imageUrl = binding.imageUrl.text.toString().trim()
+
+        if (imageFile != null) {
+            uploadImageToFirebase()
+        } else {
+            saveData(imageUrl)
+        }
     }
 
     private fun validateForm(): Boolean {
         var hasError = false
-
-        if (binding.carId.text.isNullOrBlank()) {
-            binding.carId.error = getString(R.string.required_field)
-            hasError = true
-        }
-
         if (binding.name.text.isNullOrBlank()) {
             binding.name.error = getString(R.string.required_field)
             hasError = true
@@ -242,8 +244,8 @@ class NewCarActivity : AppCompatActivity(), OnMapReadyCallback {
             Toast.makeText(this, R.string.required_marker, Toast.LENGTH_SHORT).show()
             hasError = true
         }
-
-        if (imageFile == null) {
+        val imageUrl = binding.imageUrl.text.toString().trim()
+        if (imageFile == null && imageUrl.isBlank()) {
             Toast.makeText(this, R.string.required_photo, Toast.LENGTH_SHORT).show()
             hasError = true
         }
@@ -292,7 +294,7 @@ class NewCarActivity : AppCompatActivity(), OnMapReadyCallback {
         val markerPosition = selectedMarker?.position ?: return
 
         val car = Car(
-            id = binding.carId.text.toString(),
+            id = SecureRandom().nextInt().toString(),
             imageUrl = imageUrl,
             year = binding.year.text.toString(),
             name = binding.name.text.toString(),
