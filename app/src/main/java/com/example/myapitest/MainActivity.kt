@@ -73,6 +73,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
+        setupToolbar()
+
         binding.swipeRefreshLayout.setOnRefreshListener {
             fetchCars()
         }
@@ -86,6 +88,11 @@ class MainActivity : AppCompatActivity() {
         binding.message.setOnClickListener {
             fetchCars()
         }
+    }
+
+    private fun setupToolbar() {
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.title = getString(R.string.main_title)
     }
 
     private fun navigateToNewCar() {
@@ -117,7 +124,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.message.visibility = View.GONE
         binding.recyclerView.visibility = View.VISIBLE
-
         binding.recyclerView.adapter = CarAdapter(cars) { car ->
             startActivity(CarDetailActivity.newIntent(this, car))
         }

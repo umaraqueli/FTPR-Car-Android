@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="beige_100">#F5EBDD</color>
+    <color name="beige_200">#EAD8C5</color>
+    <color name="brown_light">#C59E7A</color>
+    <color name="brown_medium">#8B5E3C</color>
+    <color name="brown_dark">#5A3825</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="app_background_color">@color/beige_100</color>
+    <color name="surface_color">#FFFCF7</color>
+    <color name="surface_variant_color">@color/beige_200</color>
+
+    <color name="primary_color">@color/brown_medium</color>
+    <color name="primary_dark_color">@color/brown_dark</color>
+    <color name="on_primary_color">@color/white</color>
+
+    <color name="on_background_color">#21150F</color>
+    <color name="text_secondary_color">#6B4B36</color>
+    <color name="card_stroke_color">#C4A385</color>
+
+    <color name="placeholder_bg_color">@color/beige_200</color>
+    <color name="placeholder_fg_color">@color/brown_dark</color>
+    <color name="error_bg_color">@color/brown_dark</color>
+    <color name="error_fg_color">@color/beige_100</color>
 </resources>

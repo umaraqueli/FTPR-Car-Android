@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="beige_100">#F5EBDD</color>
+    <color name="beige_200">#EAD8C5</color>
+    <color name="brown_light">#C59E7A</color>
+    <color name="brown_medium">#8B5E3C</color>
+    <color name="brown_dark">#5A3825</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="app_background_color">#120C09</color>
+    <color name="surface_color">#221711</color>
+    <color name="surface_variant_color">#3A281E</color>
+
+    <color name="primary_color">@color/beige_200</color>
+    <color name="primary_dark_color">@color/brown_medium</color>
+    <color name="on_primary_color">#1A120D</color>
+
+    <color name="on_background_color">@color/beige_100</color>
+    <color name="text_secondary_color">#D1B79E</color>
+    <color name="card_stroke_color">@color/brown_medium</color>
+
+    <color name="placeholder_bg_color">#3A281E</color>
+    <color name="placeholder_fg_color">@color/beige_100</color>
+    <color name="error_bg_color">@color/brown_dark</color>
+    <color name="error_fg_color">#FFF5E8</color>
+</resources>

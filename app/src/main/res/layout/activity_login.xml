@@ -4,67 +4,125 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    android:padding="20dp"
     tools:context=".LoginActivity">
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Login"
-        android:textSize="50sp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Car Api"
+        android:textColor="@color/on_background_color"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/cellphone"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:hint="@string/hint_cellphone"
-        android:inputType="phone"
-        android:maxLength="14"
-        android:text="@string/code_brazil"
-        app:layout_constraintEnd_toStartOf="@id/btnSendSms"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/btnSendSms" />
-
-    <Button
-        android:id="@+id/btnSendSms"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/send_sms"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title" />
-
-    <EditText
-        android:id="@+id/veryfyCode"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:hint="@string/hint_verify_sms"
-        android:inputType="number"
-        android:maxLength="6"
-        android:visibility="gone"
-        app:layout_constraintEnd_toStartOf="@id/btnVerifySms"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/btnVerifySms"
-        tools:visibility="visible" />
-
-    <Button
-        android:id="@+id/btnVerifySms"
+    <TextView
+        android:id="@+id/subtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/verify_sms"
-        android:visibility="gone"
+        android:gravity="center"
+        android:text="Entrar com número de telefone"
+        android:textColor="@color/text_secondary_color"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/btnSendSms"
-        app:layout_constraintTop_toBottomOf="@id/btnSendSms"
-        tools:visibility="visible" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/loginCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:cardBackgroundColor="@color/surface_color"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:strokeColor="@color/card_stroke_color"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/cellphone"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="@color/primary_color"
+                android:hint="@string/hint_cellphone"
+                android:inputType="phone"
+                android:maxLength="14"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:text="@string/code_brazil"
+                android:textColor="@color/on_background_color"
+                android:textColorHint="@color/text_secondary_color" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSendSms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/send_sms"
+                android:textStyle="bold"
+                app:backgroundTint="@color/primary_color"
+                app:cornerRadius="14dp"
+                app:icon="@android:drawable/ic_dialog_email"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:iconTint="@color/on_primary_color"
+                app:rippleColor="@color/surface_variant_color"
+                app:strokeColor="@color/card_stroke_color"
+                app:strokeWidth="1dp" />
+
+            <EditText
+                android:id="@+id/veryfyCode"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/primary_color"
+                android:hint="@string/hint_verify_sms"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/on_background_color"
+                android:textColorHint="@color/text_secondary_color"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVerifySms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/verify_sms"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:backgroundTint="@color/primary_dark_color"
+                app:cornerRadius="14dp"
+                app:icon="@android:drawable/ic_menu_send"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:iconTint="@color/on_primary_color"
+                app:rippleColor="@color/surface_variant_color"
+                app:strokeColor="@color/card_stroke_color"
+                app:strokeWidth="1dp"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
