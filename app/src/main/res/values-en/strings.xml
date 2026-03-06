@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MyApiTest - Raqueli Gonçalves</string>
+
+    <string name="generical_error">Unknown error, tap to try again.</string>
+    <string name="no_items">No cars available.</string>
+    <string name="required_field">Required field</string>
+
+    <string name="hint_cellphone">+55 11 912345678</string>
+    <string name="code_brazil">+55</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="hint_verify_sms">123456</string>
+    <string name="verify_sms">Verify SMS</string>
+    <string name="menu_loggout">Sign out</string>
+    <string name="sms_sent">Verification code sent by SMS</string>
+    <string name="code_not_sent_yet">Send the SMS before verifying the code.</string>
+    <string name="invalid_phone_format">Invalid number format, correct it and try again.</string>
+    <string name="login_title">Car API</string>
+    <string name="login_subtitle">Sign in with phone number</string>
+
+    <string name="car_label_year">Year: %1$s</string>
+    <string name="car_label_licence">Plate: %1$s</string>
+
+    <string name="location_permission_denied">Location permission denied.</string>
+    <string name="required_marker">Select a location on the map.</string>
+    <string name="required_photo">Take a car photo or provide an image URL.</string>
+    <string name="image_captured">Image captured</string>
+    <string name="error_upload_image">Failed to upload image to Firebase.</string>
+    <string name="error_add_car">Error adding the car.</string>
+    <string name="success_add_car">Car added successfully.</string>
+
+    <string name="google_maps_key">AIzaSyAQnRUL6FqzZRel99rS1Ph1a5YtBII9IWQ</string>
+    <string name="add_car">Add car</string>
+    <string name="new_car_title">New car</string>
+    <string name="hint_car_name">Car name</string>
+    <string name="hint_car_year">Year (2020/2020)</string>
+    <string name="hint_car_licence">Plate</string>
+    <string name="hint_car_image_url">Image URL</string>
+    <string name="take_photo">Take photo</string>
+    <string name="save_car">Save car</string>
+    <string name="select_location">Select the location on the map</string>
+    <string name="car_detail_title">Car details</string>
+    <string name="location_map_title">Location</string>
+    <string name="main_title">Car API</string>
+</resources>
